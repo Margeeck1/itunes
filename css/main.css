@@ -64,15 +64,22 @@
     padding-left:0px;  
 }
 
-.songlist li{
+.songlist li a {
+    display: block;
     box-shadow: 5px 5px 5px #a5a5a5;
     height: 60px;
-    line-height: 75px;
+    line-height: 60px;
     margin: 10px 0;
-    
+    color: #000;
 }
 
-.songlist li:before{
+.songlist a:hover {
+    background-color: grey;
+    text-decoration:none;
+    color: white;
+}
+
+.songlist li a:before{
      content: "►";
      padding-right:15px;     
      padding-left:15px;    
